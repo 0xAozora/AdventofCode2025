@@ -74,7 +74,7 @@ main :: proc() {
 				}
 			}
 
-			if !even && combinations != 1 {
+			if !even && combinations == 0 || combinations > 1 {
 				sum2 := sumRepeatingNumbers(start, end, i, i)
 				invalidSum2 -= sum2 * u64(combinations - 1)
 			}
