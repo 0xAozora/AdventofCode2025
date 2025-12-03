@@ -49,8 +49,9 @@ main :: proc() {
 			higherBound := u64(lowerBound * 10)
 			end := min(higherBound - 1, end)
 
+			even: bool = i % 2 == 0
 			combinations: int
-			if i % 2 == 0 {
+			if even {
 				sum1 := sumRepeatingNumbers(start, end, i, 2)
 				if sum1 != 0 {
 					invalidSum1 += sum1
@@ -73,7 +74,7 @@ main :: proc() {
 				}
 			}
 
-			if combinations != 1 {
+			if !even && combinations != 1 {
 				sum2 := sumRepeatingNumbers(start, end, i, i)
 				invalidSum2 -= sum2 * u64(combinations - 1)
 			}
