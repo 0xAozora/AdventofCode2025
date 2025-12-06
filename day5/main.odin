@@ -2,8 +2,6 @@ package main
 
 import "core:fmt"
 import "core:io"
-import "core:math"
-import "core:mem"
 import "core:os"
 import "core:sort"
 import "core:strconv"

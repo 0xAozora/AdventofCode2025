@@ -1,7 +1,6 @@
 package main
 
 import "core:fmt"
-import "core:io"
 import "core:math"
 import "core:os"
 import "core:strconv"
