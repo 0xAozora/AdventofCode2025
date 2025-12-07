@@ -1,12 +1,9 @@
 package main
 
 import "core:fmt"
-import "core:io"
 import "core:os"
-import "core:sort"
 import "core:strconv"
 import "core:strings"
-import "core:sys/kqueue"
 import "core:time"
 
 Range :: [2]int

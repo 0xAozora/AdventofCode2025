@@ -1,10 +1,8 @@
 package main
 
 import "core:fmt"
-import "core:math"
 import "core:mem"
 import "core:os"
-import "core:strconv"
 import "core:strings"
 import "core:time"
 
