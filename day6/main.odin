@@ -6,10 +6,7 @@ import "core:strconv"
 import "core:strings"
 import "core:time"
 
-Range :: [2]int
-
 main :: proc() {
-
 
 	data, ok := os.read_entire_file("input", context.allocator)
 	if !ok {
